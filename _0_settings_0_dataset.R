@@ -12,7 +12,7 @@ settings <- list()
 
 ## Dataset Metadata
 settings$metadata <- list(
-  input_project_folder = "Q321_TI_robot", # This is the folder where you saved the Web of Science files
+  input_project_folder = "Q001_robotics", # This is the folder where you saved the Web of Science files
   
   type_of_dataset = "papers", # don't change
   dataset_source = "wos", # don't change

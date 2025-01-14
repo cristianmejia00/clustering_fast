@@ -13,7 +13,7 @@ settings <- list()
 ## Metadata
 settings$metadata <- list(
   
-  project_folder = "Q321_TI_robot", # <- change here.
+  project_folder = "Q001_robotics", # <- change here.
   
   filtered_folder = "f01", #do not change!
   analysis_id = "a01_cn__f01_dc__c01_lv", #do not change! 
