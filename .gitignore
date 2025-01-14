@@ -1,0 +1,12 @@
+*.csv
+*.tsv
+*.rdata
+*.xlsx
+/zz_assets/credentials/*
+.Rproj.user
+.Rhistory
+*.RData
+.RdataTmp
+.Ruserdata
+env-tm*
+*DS_Store
