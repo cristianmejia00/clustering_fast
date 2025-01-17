@@ -2,7 +2,7 @@
 *.tsv
 *.rdata
 *.xlsx
-/zz_assets/credentials/*
+/credentials/*
 .Rproj.user
 .Rhistory
 *.RData
