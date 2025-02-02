@@ -12,7 +12,7 @@ source("zz_utils/02_libraries.R")
 library(httr)
 library(jsonlite)
 
-claude_api_key <- readr::read_file(file.path("05_assets", "credentials", "claude.key"))
+claude_api_key <- readr::read_file(file.path("zz_assets", "credentials", "claude.key"))
 
 #' @description
 #' Get answers from OpenAI's GPT. Here used for ARTICLE summarization.
@@ -92,7 +92,7 @@ library(glue)
 # `credentials/openai.key` was added to .gitignore so is not committed to the repo.
 # import Openai Python library
 # openai <- reticulate::import('openai')
-# client = openai$OpenAI(api_key = readr::read_file('05_assets/credentials/openai.key'))
+# client = openai$OpenAI(api_key = readr::read_file('zz_assets/credentials/openai.key'))
 
 
 # utils
