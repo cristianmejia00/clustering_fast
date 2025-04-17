@@ -12,13 +12,13 @@ settings <- list()
 
 ## Dataset Metadata
 settings$metadata <- list(
-  input_project_folder = "Q001_robotics", # This is the folder where you saved the Web of Science files
+  input_project_folder = "Q328_Fukuhara", # This is the folder where you saved the Web of Science files
   
   type_of_dataset = "papers", # don't change
   dataset_source = "wos", # don't change
 
   # Analysis ID (the date + number is the label of this analysis)
-  date_id = "2025-01-11", # format(Sys.Date(), "%Y-%m-%d"),
+  date_id = "2025-04-17", # format(Sys.Date(), "%Y-%m-%d"),
 
   # Query and data
   query = "TI=robot*",
@@ -28,7 +28,7 @@ settings$metadata <- list(
   dataset_file_name_suffix = "ti_robot", # suffix is used for file names
   dataset_description = "",
   created_by = "cristianmejia00@gmail.com",
-  notes = "Part of the Human Augmentation project for Mitsubishi"
+  notes = "Testing"
 )
 
 ## Dataset General Parameters

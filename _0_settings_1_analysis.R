@@ -13,7 +13,7 @@ settings <- list()
 ## Metadata
 settings$metadata <- list(
   
-  project_folder = "Q001_robotics", # <- change here.
+  project_folder = "Q328_Fukuhara", # <- change here.
   
   filtered_folder = "f01", #do not change!
   analysis_id = "a01_cn__f01_dc__c01_lv", #do not change! 
@@ -136,7 +136,7 @@ settings$llm <- list(
 ########################################################### for 00_reports.R
 ## Reporting
 settings$rp <- list(
-  most_recent_year = 2024, # This is needed so the charts do not plot 2024, or future years where data is incomplete
+  most_recent_year = 2025, # This is needed so the charts do not plot 2024, or future years where data is incomplete
   top_documents = 0, # 0 means ALL # Select the number of top documents to show in the article report
   top_items = 20, ## 0 means ALL # Select the number of top `documents`field`` to show in the clusters report
   text_columns = c("TI", "AB"), # Column(s) with text contents to merge and analyze

@@ -50,17 +50,16 @@ cl_selector <- function(a_com, threshold, size_lower_limit, max_cluster) {
   # Get the number of clusters having more papers than size_lower_limit
   larger_than_lower_limit <- length(test[test >= size_lower_limit])
   # Return the minimum of the following values
-  return(min(below_threshold, larger_than_lower_limit, max_cluster))
+  #return(min(below_threshold, larger_than_lower_limit, max_cluster))
+  print(below_threshold)
+  print(larger_than_lower_limit)
+  print(max_cluster)
+  final_value <- min(below_threshold, larger_than_lower_limit, max_cluster)
+  if (final_value == 0) {
+    final_value = max(a_com) - 1
+  }
+  return(final_value)
 }
-
-
-# Fukuhara-san problem
-final_value <- min(below_threshold, larger_than_lower_limit, max_cluster)
-if (final_value == 0) {
-  final_value = max(a_com) - 1
-}
-return(final_value)
-
 
 # Function replacement
 # unify the rest of small clusters into a cluster called "cluster 99"
