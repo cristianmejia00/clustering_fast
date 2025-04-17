@@ -53,6 +53,15 @@ cl_selector <- function(a_com, threshold, size_lower_limit, max_cluster) {
   return(min(below_threshold, larger_than_lower_limit, max_cluster))
 }
 
+
+# Fukuhara-san problem
+final_value <- min(below_threshold, larger_than_lower_limit, max_cluster)
+if (final_value == 0) {
+  final_value = max(a_com) - 1
+}
+return(final_value)
+
+
 # Function replacement
 # unify the rest of small clusters into a cluster called "cluster 99"
 # Takes a comunity vector, and the number of clusters obtained with cl_selector
