@@ -107,7 +107,7 @@ if (settings$params$type_of_analysis %in% c("topic_model", "both")) {
     year_column = "PY",
 
     # The number of topics to get. Use 0 to infer the topics with HDBScan
-    n_topics = 59,
+    n_topics = 0,
 
     # The minimum size for a topic
     min_topic_size = 10
