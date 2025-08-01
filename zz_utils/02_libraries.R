@@ -12,7 +12,7 @@ if (!("Rmpfr"       %in% rownames(installed.packages()))) {install.packages("Rmp
 if (!("plyr"        %in% rownames(installed.packages()))) {install.packages("plyr")}
 if (!("dplyr"       %in% rownames(installed.packages()))) {install.packages("dplyr")}
 if (!("topicmodels" %in% rownames(installed.packages()))) {install.packages("topicmodels")}
-if (!("ldatuning"   %in% rownames(installed.packages()))) {install.packages("ldatuning")}
+#if (!("ldatuning"   %in% rownames(installed.packages()))) {install.packages("ldatuning")}
 if (!("plotly"      %in% rownames(installed.packages()))) {install.packages("plotly")}
 if (!("stringr"     %in% rownames(installed.packages()))) {install.packages("stringr")}
 if (!("ngram"       %in% rownames(installed.packages()))) {install.packages("ngram")}
@@ -28,6 +28,9 @@ if (!("DT"          %in% rownames(installed.packages()))) {install.packages("DT"
 if (!("glue"        %in% rownames(installed.packages()))) {install.packages("glue")}
 if (!("svglite"     %in% rownames(installed.packages()))) {install.packages("svglite")}
 if (!("uuid"        %in% rownames(installed.packages()))) {install.packages("uuid")}
+if (!("ggrepel"        %in% rownames(installed.packages()))) {install.packages("ggrepel")}
+if (!("reshape2"        %in% rownames(installed.packages()))) {install.packages("reshape2")}
+if (!("gridExtra"        %in% rownames(installed.packages()))) {install.packages("gridExtra")}
 ####################################################
 # Load libraries
 
@@ -45,7 +48,7 @@ library(plyr)
 library(dplyr)
 # sudo apt-get install libgsl-dev
 library(topicmodels)
-library(ldatuning)
+#library(ldatuning)
 # apt-get install r-cran-rjava
 #library(qdap)
 library(plotly)
@@ -61,3 +64,6 @@ library(tools)
 library(DT)
 library(glue)
 library(uuid)
+library(ggrepel)
+library(reshape2)
+library(gridExtra)
